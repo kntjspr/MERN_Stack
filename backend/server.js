@@ -1,3 +1,5 @@
+require('dotenv').config()
+
 const express = require("express");
 
 //express app
@@ -13,7 +15,7 @@ app.use((req, res, next) => {
 })
 
 
-const port = process.env.PORT || 3000; // viewed at http://localhost:3000 or env
+const port = process.env.PORT || 4000; // viewed at http://localhost:4000 or env
 
 // routes
 app.use('/api/workouts', workoutRoutes)
